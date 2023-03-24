@@ -1,14 +1,17 @@
+import java.io.IOException;
+
 public class Printer {
-    public static void main(String[] args){
-        Printer.PrintNonSense();
-        Printer.PrintHello();
+    public static void main(String[] args) throws IOException {
+        Printer.printNonSense();
+        Printer.printHello();
+        Stats.testSomeMethod();
     }
 
-    private static void PrintNonSense(){
+    private static void printNonSense(){
         System.out.println("dfsggfusafiasds");
     }
 
-    private static void PrintHello(){
+    private static void printHello(){
         System.out.println("Hello, this is a test project!");
     }
 }
